@@ -1,452 +1,500 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agustin Bustamante</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <link href="https://fonts.cdnfonts.com/css/hero-new" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/41b5c639e3.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div class="container">
-        <div class="sidebar">
-            <h1 class="nombre">Agustin Bustamante</h1>
-            <p class="posicion">Full Stack Software Development</p>
-            <p class="subtitulo mt-4 max-w-xs leading-normal">I craft innovative and user-centric software solutions to enhance digital experiences for all.
-            </p>
-            <br> <br>
-            <ul class="menu">
-                <li><a href="#about" onclick="scrollToAbout()">ABOUT ME</a></li>
-                <br>
-                <li><a href="#experience" onclick="scrollToExp()">EXPERIENCE</a></li>
-                <br>
-                <li><a href="#projects" onclick="scrollToProj()">PROJECTS</a></li>
-            </ul>
-        <div class="socials">
-            <a href="https://www.linkedin.com/in/agusbusta/"><i class="fa-brands fa-linkedin-in" style="color:rgb(226 232 240);"></i></a>
-            <a href="https://twitter.com/agusbusta7"><i class="fa-brands fa-x-twitter" style="color: rgb(226 232 240);"></i></a>
-            <a href="https://github.com/agusbusta"><i class="fa-brands fa-github" style="color: rgb(226 232 240);"></i></a>
-            <a href="https://drive.google.com/file/d/1fI-w3Sr0BZiVGRR22g8AACl-_ptibptW/view?usp=sharing" target="_blank"><i class="fa-solid fa-file-lines"></i></a>
-
-              
-        </div>
-        </div>
-        <div class="content">
-            
-            <section id="about">
-                <p class="about">
-                    Since my childhood, I've always been captivated by screens, delving into the intricacies of technology and nurturing my passion for computing. My natural curiosity led me to take a keen interest in areas like mathematics, design, and logic, laying a solid foundation for my career in software development.</p>
-
-                        <p class="about">
-                            I've been captivated by technology since childhood, with a keen interest in mathematics, design, and logic. Today, I'm a dedicated professional passionate about software development.
-                        
-                            My focus spans the entire spectrum of development, from crafting appealing interfaces with <strong style="color: rgb(226, 232, 240);">React</strong> to building robust server-side solutions with <strong style="color: rgb(226, 232, 240);">Flask, Express.js, and Node.js</strong>. I thrive on creating impactful applications that contribute to society's progress.
-
-                            I have advanced knowledge in <strong style="color: rgb(226, 232, 240);">JavaScript</strong> and <strong style="color: rgb(226, 232, 240);">Python</strong>, two of the most versatile and widely-used programming languages.
-                        
-                            I'm proficient in working with both relational databases like <strong style="color: rgb(226, 232, 240);">SQL</strong> and non-relational databases like <strong style="color: rgb(226, 232, 240);">MongoDB</strong>. 
-                        
-                           </p>
-                    <p class="about">
-                    Beyond my passion for technology, I'm an avid runner. When I'm not in front of the screen, you'll find me enjoying the freedom of running outdoors, a space where I find inspiration and mental clarity.
-                
-                    My goal is to keep growing and taking on new challenges that allow me to elevate my skills to the next level and continue making a difference in the tech community.
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agustin Bustamante</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <link href="https://fonts.cdnfonts.com/css/hero-new" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/41b5c639e3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="sidebar">
+                <h1 class="nombre">Agustin Bustamante</h1>
+                <p class="posicion">Full Stack Software Development</p>
+                <p class="subtitulo mt-4 max-w-xs leading-normal">I craft innovative and user-centric software solutions to enhance digital experiences for all.
                 </p>
-                <br>
-                <br>
-                <br>
-            </section>
-                <section id="experience">
-                    <div class="tarjeta">
-                        <div class="exp-text-container">
-                            <p style="font-size: 12px; color: rgba(226, 232, 240, 0.575);" class="exp-text">Feb. 2023 - Sep. 2023</p>
-                        </div>
-                        <div class="card-content-container">
-                            <h4 class="exp-name">Software Engineer Jr.</h4>
-                            <h5 class="exp-place" style="font-size: 12px; color: rgba(226, 232, 240, 0.575);">Chewed Pixel Studios</h5>
-                            <p style="font-size: 10px; color: rgba(226, 232, 240, 0.575);" class="exp-description">I specialize in innovative projects that leverage technology and creativity. One standout project is the 'VILA Web-AR Platform,' where I transformed augmented reality experiences using Python, Flask, SQL, Microsoft Azure, and JavaScript. I also contributed significantly to 'Door Store,' enhancing the frontend with JavaScript, HTML, CSS, and Canvas for an interactive door customization experience with 3D models. These projects showcase my dedication to blending tech and user-centered design.</p>
-                            <ul class="tech-stack">
-                                <li class="tech">Python</li>
-                                <li class="tech">HTML</li>
-                                <li class="tech">CSS</li>
-                                <li class="tech">Javascript</li>
-                                <li class="tech">SQL</li>
-                                <li class="tech">Azure</li>
-                                <li class="tech">Three.Js</li>
-                                <li class="tech">Flask</li>
-                             </ul>
-                        </div>
-                    </div>
-                    <div class="tarjeta">
-                        <div class="exp-text-container">
-                            <p style="font-size: 12px; color: rgba(226, 232, 240, 0.575);" class="exp-text">Oct. 2022 - Feb. 2023</p>
-                        </div>
-                        <div class="card-content-container">
-                            <h4 class="exp-name">Full Stack Web Developer</h4>
-                            <h5 class="exp-place" style="font-size: 12px; color: rgba(226, 232, 240, 0.575);">Soy Henry</h5>
-                            <p style="font-size: 10px; color: rgba(226, 232, 240, 0.575);" class="exp-description">During the start of my programming journey, I have crafted an array of projects to refine my proficiency in HTML5, CSS, ES6, JS, REACT, REDUX, NODEJS, and beyond. My GitHub repository showcases a spectrum of creations, spanning from web apps and E-commerce platforms to weather applications and libraries, featuring an integration with the Rick and Morty API. These endeavors have heightened my self-assurance and primed me for a seamless transition into the job market.</p>
-                            <ul class="tech-stack">
-                                <li class="tech">HTML</li>
-                                <li class="tech">CSS</li>
-                                <li class="tech">Javascript</li>
-                                <li class="tech">NodeJS</li>
-                                <li class="tech">SQL</li>
-                                <li class="tech">MongoDB</li>
-                                <li class="tech">ExpressJs</li>
-                                <li class="tech">React</li>
-                                <li class="tech">Redux</li>
-                                <li class="tech">RESTful API</li>
-                             </ul>
-                        </div>  
-                    </div>
-            </section>
-            <br>
-                <br>
-                <br>
-            <section id="projects">
-                <div class="tarjeta">
-                    <div class="exp-text-container" style="height: 80px;">
-                       <img style="object-fit: fill; width: 95%; border-radius: 15px;" src="https://media.licdn.com/dms/image/D4E0BAQG18ajJ2P3PxA/company-logo_200_200/0/1686100958398?e=1701907200&v=beta&t=n5vXbQA8A1mWb3zZroXoa_oVny3cPQ2HzN_yi7fv7vo" alt="logo">
-                    </div>
-                    <div class="card-content-container">
-                        <h4 class="proj-name"><a class="proj-name" href="https://vila-ar.com" target="_blank">Vila-AR <i style="font-size: 20px;" class="fa-solid fa-link"></i></a></h4>
-                        <h5 class="exp-place" style="font-size: 12px; color: rgba(226, 232, 240, 0.575);">Web AR Platform - 2023</h5>
-                        <p style="font-size: 10px; color: rgba(226, 232, 240, 0.575);" class="exp-description">Revolutionizing augmented reality interactions through an innovative web-based solution.
-                            Developed using an array of technologies, including Python, Flask, SQL, Microsoft Azure, and JavaScript, among others.</p>
-                    </div>
-                </div>
-                <br>
-                <div class="tarjeta">
-                    <div class="exp-text-container" style="height: 80px;">
-                       <img style="object-fit: fill; width: 95%; border-radius: 15px;" src="https://images.squarespace-cdn.com/content/v1/627136bb22c34f331463b230/c51f75b4-b774-4e1b-a8e8-f2e7e8179725/Screen+Shot+2022-05-03+at+11.29.27+AM.png?format=1500w" alt="logo">
-                    </div>
-                    <div class="card-content-container">
-                        <h4 class="proj-name"><a class="proj-name" href="https://www.doorstorecambridge.com/products" target="_blank">Door Store 3D Furniture Builder <i style="font-size: 20px;" class="fa-solid fa-link"></i></a></h4>
-                        <h5 class="exp-place" style="font-size: 12px; color: rgba(226, 232, 240, 0.575);">Ecommerce - 2023</h5>
-                        <p style="font-size: 10px; color: rgba(226, 232, 240, 0.575);" class="exp-description">Played a pivotal role in the Door Store Website project by designing the frontend logic for a dynamic table configurator using JavaScript, HTML, CSS, and Canvas. Empowered users to create customized combinations of dimensions, materials, legs, drawers, shelves, and more. Utilized 3D models to facilitate augmented reality interactions.</p>
-                    </div>
-                </div>
-                <br>
-                <div class="tarjeta">
-                    <div class="exp-text-container" style="height: 80px;">
-                       <img style="object-fit: fill; width: 95%; border-radius: 15px;" src="data:image/png;base64,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" alt="logo">
-                    </div>
-                    <div class="card-content-container">
-                        <h4 class="proj-name"><a class="proj-name" href="https://imperioboreal.vercel.app" target="_blank">Imperio Boreal <i style="font-size: 20px;" class="fa-solid fa-link"></i></a></h4>
-                        <h5 class="exp-place" style="font-size: 12px; color: rgba(226, 232, 240, 0.575);">Ecommerce - 2023</h5>
-                        <p style="font-size: 10px; color: rgba(226, 232, 240, 0.575);" class="exp-description">This Ecommerce is a platform that allows managing users and products through a CRUD interface, in addition to having an authentication system and user roles. It also includes an administration panel for managing products, users, and orders. Among the technologies used are React, Typescript, Auth0, Redux, JavaScript, MongoDB, Mongoose, Cloudinary, and Express.js.</p>
-                    </div>
-                </div>
-                <br>
-                <div class="tarjeta">
-                    <div class="exp-text-container" style="height: 100px;">
-                       <img style="object-fit: fill; width: 95%; border-radius: 15px;" src="https://media.licdn.com/dms/image/C4D22AQFA-n7U0zi8qQ/feedshare-shrink_2048_1536/0/1677895324261?e=1697068800&v=beta&t=D1-4xC1QXubnCHpCrg1VBszxMiMgg0tQ4z9h-6cR0kM" alt="logo">
-                    </div>
-                    <div class="card-content-container">
-                        <h4 class="proj-name"><a class="proj-name" href="https://videogames-ivory.vercel.app" target="_blank">Videogames Library <i style="font-size: 20px;" class="fa-solid fa-link"></i></a></h4>
-                        <h5 class="exp-place" style="font-size: 12px; color: rgba(226, 232, 240, 0.575);">Api Website - 2023</h5>
-                        <p style="font-size: 10px; color: rgba(226, 232, 240, 0.575);" class="exp-description">Individual project created during the final phase of the SoyHenry Bootcamp, serving as a global infographic library for video games. It was developed as a Single Page Application (SPA)/WebApp for a video game library, utilizing technologies such as React, Redux, JavaScript, Node.js, Express.js, SQL, PostgreSQL, Module.css, and more.
+                <br> <br>
+                <ul class="menu">
+                    <li><a href="#about" onclick="scrollToAbout()">ABOUT ME</a></li>
+                    <br>
+                    <li><a href="#experience" onclick="scrollToExp()">EXPERIENCE</a></li>
+                    <br>
+                    <li><a href="#projects" onclick="scrollToProj()">PROJECTS</a></li>
+                </ul>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/agusbusta/"><i class="fa-brands fa-linkedin-in" style="color:rgb(226 232 240);"></i></a>
+                <a href="https://twitter.com/agusbusta7"><i class="fa-brands fa-x-twitter" style="color: rgb(226 232 240);"></i></a>
+                <a href="https://github.com/agusbusta"><i class="fa-brands fa-github" style="color: rgb(226 232 240);"></i></a>
+                <a href="https://drive.google.com/file/d/1fI-w3Sr0BZiVGRR22g8AACl-_ptibptW/view?usp=sharing" target="_blank"><i class="fa-solid fa-file-lines"></i></a>
 
-                            With an array of options and filters, it provides comprehensive information about various games. Additionally, users can create their own new games through a user-friendly form.</p>
-                    </div>
-                </div>
+                
+            </div>
+            </div>
+            <div class="content">
+                
+                <section id="about">
+                    <p class="about">
+                        Since my childhood, I've always been captivated by screens, delving into the intricacies of technology and nurturing my passion for computing. My natural curiosity led me to take a keen interest in areas like mathematics, design, and logic, laying a solid foundation for my career in software development.</p>
+
+                            <p class="about">
+                                I've been captivated by technology since childhood, with a keen interest in mathematics, design, and logic. Today, I'm a dedicated professional passionate about software development.
+                            
+                                My focus spans the entire spectrum of development, from crafting appealing interfaces with <strong style="color: rgb(226, 232, 240);">React</strong> to building robust server-side solutions with <strong style="color: rgb(226, 232, 240);">Flask, Express.js, and Node.js</strong>. I thrive on creating impactful applications that contribute to society's progress.
+
+                                I have advanced knowledge in <strong style="color: rgb(226, 232, 240);">JavaScript</strong> and <strong style="color: rgb(226, 232, 240);">Python</strong>, two of the most versatile and widely-used programming languages.
+                            
+                                I'm proficient in working with both relational databases like <strong style="color: rgb(226, 232, 240);">SQL</strong> and non-relational databases like <strong style="color: rgb(226, 232, 240);">MongoDB</strong>. 
+                            
+                            </p>
+                        <p class="about">
+                        Beyond my passion for technology, I'm an avid runner. When I'm not in front of the screen, you'll find me enjoying the freedom of running outdoors, a space where I find inspiration and mental clarity.
+                    
+                        My goal is to keep growing and taking on new challenges that allow me to elevate my skills to the next level and continue making a difference in the tech community.
+                    </p>
+                    <br>
+                    <br>
+                    <br>
+                </section>
+                    <section id="experience">
+                        <div class="tarjeta">
+                            <div class="exp-text-container">
+                                <p style="font-size: 12px; color: rgba(226, 232, 240, 0.575);" class="exp-text">Feb. 2023 - Sep. 2023</p>
+                            </div>
+                            <div class="card-content-container">
+                                <h4 class="exp-name">Software Engineer Jr.</h4>
+                                <h5 class="exp-place" style="font-size: 12px; color: rgba(226, 232, 240, 0.575);">Chewed Pixel Studios</h5>
+                                <p style="font-size: 10px; color: rgba(226, 232, 240, 0.575);" class="exp-description">I specialize in innovative projects that leverage technology and creativity. One standout project is the 'VILA Web-AR Platform,' where I transformed augmented reality experiences using Python, Flask, SQL, Microsoft Azure, and JavaScript. I also contributed significantly to 'Door Store,' enhancing the frontend with JavaScript, HTML, CSS, and Canvas for an interactive door customization experience with 3D models. These projects showcase my dedication to blending tech and user-centered design.</p>
+                                <ul class="tech-stack">
+                                    <li class="tech">Python</li>
+                                    <li class="tech">HTML</li>
+                                    <li class="tech">CSS</li>
+                                    <li class="tech">Javascript</li>
+                                    <li class="tech">SQL</li>
+                                    <li class="tech">Azure</li>
+                                    <li class="tech">Three.Js</li>
+                                    <li class="tech">Flask</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tarjeta">
+                            <div class="exp-text-container">
+                                <p style="font-size: 12px; color: rgba(226, 232, 240, 0.575);" class="exp-text">Oct. 2022 - Feb. 2023</p>
+                            </div>
+                            <div class="card-content-container">
+                                <h4 class="exp-name">Full Stack Web Developer</h4>
+                                <h5 class="exp-place" style="font-size: 12px; color: rgba(226, 232, 240, 0.575);">Soy Henry</h5>
+                                <p style="font-size: 10px; color: rgba(226, 232, 240, 0.575);" class="exp-description">During the start of my programming journey, I have crafted an array of projects to refine my proficiency in HTML5, CSS, ES6, JS, REACT, REDUX, NODEJS, and beyond. My GitHub repository showcases a spectrum of creations, spanning from web apps and E-commerce platforms to weather applications and libraries, featuring an integration with the Rick and Morty API. These endeavors have heightened my self-assurance and primed me for a seamless transition into the job market.</p>
+                                <ul class="tech-stack">
+                                    <li class="tech">HTML</li>
+                                    <li class="tech">CSS</li>
+                                    <li class="tech">Javascript</li>
+                                    <li class="tech">NodeJS</li>
+                                    <li class="tech">SQL</li>
+                                    <li class="tech">MongoDB</li>
+                                    <li class="tech">ExpressJs</li>
+                                    <li class="tech">React</li>
+                                    <li class="tech">Redux</li>
+                                    <li class="tech">RESTful API</li>
+                                </ul>
+                            </div>  
+                        </div>
+                </section>
                 <br>
-                <div class="tarjeta">
-                    <div class="exp-text-container" style="height: 100px;">
-                       <img style="object-fit: fill; width: 95%; border-radius: 15px;" src="https://assets.materialup.com/uploads/f9c13c5c-f69e-4c76-9601-d77470089b85/weatherappicon.png" alt="logo">
+                    <br>
+                    <br>
+                <section id="projects">
+                    <div class="tarjeta">
+                        <div class="exp-text-container" style="height: 80px;">
+                        <img style="object-fit: fill; width: 95%; border-radius: 15px;" src="https://media.licdn.com/dms/image/D4E0BAQG18ajJ2P3PxA/company-logo_200_200/0/1686100958398?e=1701907200&v=beta&t=n5vXbQA8A1mWb3zZroXoa_oVny3cPQ2HzN_yi7fv7vo" alt="logo">
+                        </div>
+                        <div class="card-content-container">
+                            <h4 class="proj-name"><a class="proj-name" href="https://vila-ar.com" target="_blank">Vila-AR <i style="font-size: 20px;" class="fa-solid fa-link"></i></a></h4>
+                            <h5 class="exp-place" style="font-size: 12px; color: rgba(226, 232, 240, 0.575);">Web AR Platform - 2023</h5>
+                            <p style="font-size: 10px; color: rgba(226, 232, 240, 0.575);" class="exp-description">Revolutionizing augmented reality interactions through an innovative web-based solution.
+                                Developed using an array of technologies, including Python, Flask, SQL, Microsoft Azure, and JavaScript, among others.</p>
+                        </div>
                     </div>
-                    <div class="card-content-container">
-                        <h4 class="proj-name"><a class="proj-name" href="https://weather-app-bay-mu.vercel.app" target="_blank">WAPP <i style="font-size: 20px;" class="fa-solid fa-link"></i></a></h4>
-                        <h5 class="exp-place" style="font-size: 12px; color: rgba(226, 232, 240, 0.575);">Weather Web App - 2022</h5>
-                        <p style="font-size: 10px; color: rgba(226, 232, 240, 0.575);" class="exp-description">Stay informed about the weather conditions in any city with WAPP, your go-to weather app. Whether you're planning your day or just curious, WAPP provides you with all the essential weather details you need to know.</p>
+                    <br>
+                    <div class="tarjeta">
+                        <div class="exp-text-container" style="height: 80px;">
+                        <img style="object-fit: fill; width: 95%; border-radius: 15px;" src="https://images.squarespace-cdn.com/content/v1/627136bb22c34f331463b230/c51f75b4-b774-4e1b-a8e8-f2e7e8179725/Screen+Shot+2022-05-03+at+11.29.27+AM.png?format=1500w" alt="logo">
+                        </div>
+                        <div class="card-content-container">
+                            <h4 class="proj-name"><a class="proj-name" href="https://www.doorstorecambridge.com/products" target="_blank">Door Store 3D Furniture Builder <i style="font-size: 20px;" class="fa-solid fa-link"></i></a></h4>
+                            <h5 class="exp-place" style="font-size: 12px; color: rgba(226, 232, 240, 0.575);">Ecommerce - 2023</h5>
+                            <p style="font-size: 10px; color: rgba(226, 232, 240, 0.575);" class="exp-description">Played a pivotal role in the Door Store Website project by designing the frontend logic for a dynamic table configurator using JavaScript, HTML, CSS, and Canvas. Empowered users to create customized combinations of dimensions, materials, legs, drawers, shelves, and more. Utilized 3D models to facilitate augmented reality interactions.</p>
+                        </div>
                     </div>
-                </div>
-                <br>
-                <div class="tarjeta">
-                    <div class="exp-text-container" style="height: 100px;">
-                       <img style="object-fit: fill; width: 95%; border-radius: 15px;" src="https://img.freepik.com/premium-vector/minimalist-calculator-interface_6735-878.jpg?w=1380" alt="logo">
+                    <br>
+                    <div class="tarjeta">
+                        <div class="exp-text-container" style="height: 80px;">
+                        <img style="object-fit: fill; width: 95%; border-radius: 15px;" src="data:image/png;base64,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" alt="logo">
+                        </div>
+                        <div class="card-content-container">
+                            <h4 class="proj-name"><a class="proj-name" href="https://imperioboreal.vercel.app" target="_blank">Imperio Boreal <i style="font-size: 20px;" class="fa-solid fa-link"></i></a></h4>
+                            <h5 class="exp-place" style="font-size: 12px; color: rgba(226, 232, 240, 0.575);">Ecommerce - 2023</h5>
+                            <p style="font-size: 10px; color: rgba(226, 232, 240, 0.575);" class="exp-description">This Ecommerce is a platform that allows managing users and products through a CRUD interface, in addition to having an authentication system and user roles. It also includes an administration panel for managing products, users, and orders. Among the technologies used are React, Typescript, Auth0, Redux, JavaScript, MongoDB, Mongoose, Cloudinary, and Express.js.</p>
+                        </div>
                     </div>
-                    <div class="card-content-container">
-                        <h4 class="proj-name"><a class="proj-name" href="https://basic-calc-flame.vercel.app" target="_blank">Minimal Calculator <i style="font-size: 20px;" class="fa-solid fa-link"></i></a></h4>
-                        <h5 class="exp-place" style="font-size: 12px; color: rgba(226, 232, 240, 0.575);">Calculator Web App - 2022</h5>
-                        <p style="font-size: 10px; color: rgba(226, 232, 240, 0.575);" class="exp-description">Stay informed about the weather conditions in any city with WAPP, your go-to weather app. Whether you're planning your day or just curious, WAPP provides you with all the essential weather details you need to know.</p>
+                    <br>
+                    <div class="tarjeta">
+                        <div class="exp-text-container" style="height: 100px;">
+                        <img style="object-fit: fill; width: 95%; border-radius: 15px;" src="https://media.licdn.com/dms/image/C4D22AQFA-n7U0zi8qQ/feedshare-shrink_2048_1536/0/1677895324261?e=1697068800&v=beta&t=D1-4xC1QXubnCHpCrg1VBszxMiMgg0tQ4z9h-6cR0kM" alt="logo">
+                        </div>
+                        <div class="card-content-container">
+                            <h4 class="proj-name"><a class="proj-name" href="https://videogames-ivory.vercel.app" target="_blank">Videogames Library <i style="font-size: 20px;" class="fa-solid fa-link"></i></a></h4>
+                            <h5 class="exp-place" style="font-size: 12px; color: rgba(226, 232, 240, 0.575);">Api Website - 2023</h5>
+                            <p style="font-size: 10px; color: rgba(226, 232, 240, 0.575);" class="exp-description">Individual project created during the final phase of the SoyHenry Bootcamp, serving as a global infographic library for video games. It was developed as a Single Page Application (SPA)/WebApp for a video game library, utilizing technologies such as React, Redux, JavaScript, Node.js, Express.js, SQL, PostgreSQL, Module.css, and more.
+
+                                With an array of options and filters, it provides comprehensive information about various games. Additionally, users can create their own new games through a user-friendly form.</p>
+                        </div>
                     </div>
-                </div>
-                <br>
-            </section>
+                    <br>
+                    <div class="tarjeta">
+                        <div class="exp-text-container" style="height: 100px;">
+                        <img style="object-fit: fill; width: 95%; border-radius: 15px;" src="https://assets.materialup.com/uploads/f9c13c5c-f69e-4c76-9601-d77470089b85/weatherappicon.png" alt="logo">
+                        </div>
+                        <div class="card-content-container">
+                            <h4 class="proj-name"><a class="proj-name" href="https://weather-app-bay-mu.vercel.app" target="_blank">WAPP <i style="font-size: 20px;" class="fa-solid fa-link"></i></a></h4>
+                            <h5 class="exp-place" style="font-size: 12px; color: rgba(226, 232, 240, 0.575);">Weather Web App - 2022</h5>
+                            <p style="font-size: 10px; color: rgba(226, 232, 240, 0.575);" class="exp-description">Stay informed about the weather conditions in any city with WAPP, your go-to weather app. Whether you're planning your day or just curious, WAPP provides you with all the essential weather details you need to know.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="tarjeta">
+                        <div class="exp-text-container" style="height: 100px;">
+                        <img style="object-fit: fill; width: 95%; border-radius: 15px;" src="https://img.freepik.com/premium-vector/minimalist-calculator-interface_6735-878.jpg?w=1380" alt="logo">
+                        </div>
+                        <div class="card-content-container">
+                            <h4 class="proj-name"><a class="proj-name" href="https://basic-calc-flame.vercel.app" target="_blank">Minimal Calculator <i style="font-size: 20px;" class="fa-solid fa-link"></i></a></h4>
+                            <h5 class="exp-place" style="font-size: 12px; color: rgba(226, 232, 240, 0.575);">Calculator Web App - 2022</h5>
+                            <p style="font-size: 10px; color: rgba(226, 232, 240, 0.575);" class="exp-description">Stay informed about the weather conditions in any city with WAPP, your go-to weather app. Whether you're planning your day or just curious, WAPP provides you with all the essential weather details you need to know.</p>
+                        </div>
+                    </div>
+                    <br>
+                </section>
+            </div>
+            <div class="cursor"></div> <!-- Agregar el cursor personalizado -->
         </div>
-        <div class="cursor"></div> <!-- Agregar el cursor personalizado -->
-    </div>
-              
-    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
-</body>
-</html>
+                
+        <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+    </body>
+    </html>
 
- <style>
-    .proj-name{
-        text-decoration: none ; 
-        color: rgb(226 232 240) ;
-    }
-
-    .proj-name:hover{
-        text-decoration: none;
-        color:  rgb(0, 110, 255);
-    }
-
-
- .container {
-    display: flex;
-    color: rgb(226 232 240);
-    overflow: hidden; /* Oculta la barra de scroll vertical */
-}
-.subtitulo{
-    width: 400px;
-    color: rgba(226, 232, 240, 0.575);
-}
-
-.sidebar {
-    font-family: 'Hero New', sans-serif;                   
-    width: 30%;
-    position: fixed;
-    top: 4rem;
-    left: 10%; /* Fija la barra lateral en la parte superior izquierda */
-     /* Color de fondo de la barra lateral */
-    padding: 20px;
-    box-sizing: border-box;
-    height: 100vh; /* Establece la altura de la barra lateral como 100% del viewport */
-}
-
-
-.content {
-    font-family: 'Hero New', sans-serif; 
-    margin-top: 6rem;
-    width: 70%;
-    margin-left: 50%; /* Deja espacio para la barra lateral */
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-y: scroll; /* Agrega una barra de scroll solo al contenido del lado derecho */
-    height: 100vh; /* Establece la misma altura que la barra lateral */
-}
-
-/* Oculta la barra de desplazamiento del lado derecho */
-.content::-webkit-scrollbar {
-    width: 0.5em;
-}
-
-.content::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-
-.content::-webkit-scrollbar-thumb {
-    background-color: transparent;
-}
-
-
-body {
-    background-color: #10142c; /* Fondo negro */
-}
-
-.cursor {
-    position: fixed;
-    background-color: transparent;
-    border-radius: 50%;
-    pointer-events: none;
-    animation: cursorGlow infinite alternate;
-    box-shadow: 0 0 220px 220px rgba(119, 105, 212, 0.33); /* Resplandor muy grande */
-}
-/* Estilos para la lista sin puntos */
-.menu {
-    list-style-type: none;
-    padding: 0;
-}
-
-/* Estilo inicial para los elementos de la lista */
-.menu li {
-    display: flex;
-    align-items: center;
-    padding: 5px 0;
-}
-
-
-/* Estilo para la línea a la izquierda */
-.menu li::before {
-    content: "";
-    width: 20px; /* Ancho de la línea inicial */
-    height: 2px; /* Altura de la línea */
-    background-color: transparent; /* Color de la línea inicial */
-    margin-right: 10px; /* Espacio entre la línea y el texto */
-    transition: all 0.3s; /* Transición suave para cambios */
-}
-
-/* Estilo para el texto del enlace */
-.menu li a {
-    text-decoration: none;
-    color: rgba(226, 232, 240, 0.575); /* Color de texto normal */
-    transition: all 0.3s; /* Transición suave para cambios */
-}
-
-/* Estilo al hacer hover sobre los elementos de la lista */
-.menu li:hover::before {
-    width: 10%; /* Hacer la línea más larga al hacer hover */
-    background-color: rgb(226 232 240); /* Cambiar el color de la línea al hacer hover */
-}
-
-/* Estilo al hacer clic en los elementos de la lista */
-.menu li:active::before {
-    width: 10%; /* Mantener la línea larga al hacer clic */
-    background-color: rgb(226 232 240); /* Mantener el color de la línea al hacer clic */
-}
-
-/* Estilo al hacer hover sobre los enlaces */
-.menu li a:hover {
-    color: rgb(226 232 240); /* Cambiar el color del texto al hacer hover */
-}
-
-.nombre{
-    font-size: 45px;
-    font-weight: 600;  
-    width: 500px;
-
-}
-
-.posicion{
-    font-size: 1.20rem;
-    line-height: 1.75rem;
-    font-weight: 320;
-
-}
-
-
-.about{
-    color:  rgba(226, 232, 240, 0.575);
-}
-.socials {
-    position: fixed;
-    bottom: 70px; /* Ajusta la distancia desde el pie de página */
-    left: 12%; /* Ajusta la distancia desde el margen derecho */
-    display: flex;
-    flex-direction: row;
-}
-
-.socials a {
-    text-decoration: none;
-    color: rgb(226 232 240);
-    margin-bottom: 10px; /* Espacio entre los íconos de redes sociales */
-    padding: 10px;
-    font-size: 24px;
-}
-/* ... (your existing CSS) ... */
-/* Style for the "experience" section */
-#experience {
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center align items horizontally */
-    gap: 20px; /* Space between each "card" */
-}
-
-.tarjeta {
-    display: flex;
-    flex-direction: row; /* Stack elements vertically */
-    justify-content: center; /* Center align items vertically within the card */
-    align-items: start; /* Center align items horizontally within the card */
-    width: 100%; /* Take up full width of the parent */
-    background-color: transparent; /* Background color for the card */
-    padding: 10px; /* Add some padding for spacing */
-    box-sizing: border-box; 
-    border-radius: 15px;
-}
-
-.tarjeta:hover{
-background: rgba(255, 255, 255, 0.05);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(2.6px);
--webkit-backdrop-filter: blur(2.6px);
-
-}
-
-.exp-text-container {
-    background-color: none;
-    width: 30%; /* Take up 30% of the card's width */
-}
-
-.card-content-container {
-    width: 70%; /* Take up 70% of the card's width */
-}
-.tech-stack {
-    font-size: 12px;
-    list-style-type: none; /* Elimina los puntos/bolitas al lado de los elementos <li> */
-    padding: 0; /* Elimina el espacio interno (padding) de la lista */
-    margin: 0; /* Elimina el espacio externo (margin) de la lista */
-}
-.tech {
-    padding: 5px; /* Agrega un pequeño espacio interno */
-    border-radius: 3px; /* Agrega un pequeño borde redondeado */
-    background-color: rgb(0, 110, 255); /* Agrega un fondo con transparencia */
-    margin: 5px 0; /* Agrega un pequeño espacio externo arriba y abajo */
-    display: inline-block; /* Para que los elementos <li> se muestren en línea */
-    margin-right: 5px; /* Espacio entre los elementos <li> */
-}
-
- </style>
-
- <script>
-    
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetSection = document.getElementById(targetId);
-        if (targetSection) {
-            window.scrollTo({
-                top: targetSection.offsetTop,
-                behavior: 'smooth'
-            });
+    <style>
+        .proj-name{
+            text-decoration: none ; 
+            color: rgb(226 232 240) ;
         }
+
+        .proj-name:hover{
+            text-decoration: none;
+            color:  rgb(0, 110, 255);
+        }
+
+
+    .container {
+        display: flex;
+        color: rgb(226 232 240);
+        overflow: hidden; /* Oculta la barra de scroll vertical */
+    }
+    .subtitulo{
+        width: 400px;
+        color: rgba(226, 232, 240, 0.575);
+    }
+
+    .sidebar {
+        font-family: 'Hero New', sans-serif;                   
+        width: 30%;
+        position: fixed;
+        top: 4rem;
+        left: 10%; /* Fija la barra lateral en la parte superior izquierda */
+        /* Color de fondo de la barra lateral */
+        padding: 20px;
+        box-sizing: border-box;
+        height: 100vh; /* Establece la altura de la barra lateral como 100% del viewport */
+    }
+
+
+    .content {
+        font-family: 'Hero New', sans-serif; 
+        margin-top: 6rem;
+        width: 70%;
+        margin-left: 50%; /* Deja espacio para la barra lateral */
+        padding: 20px;
+        box-sizing: border-box;
+        overflow-y: scroll; /* Agrega una barra de scroll solo al contenido del lado derecho */
+        height: 100vh; /* Establece la misma altura que la barra lateral */
+    }
+
+    /* Oculta la barra de desplazamiento del lado derecho */
+    .content::-webkit-scrollbar {
+        width: 0.5em;
+    }
+
+    .content::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .content::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+
+
+    body {
+        background-color: #10142c; /* Fondo negro */
+    }
+
+    .cursor {
+        position: fixed;
+        background-color: transparent;
+        border-radius: 50%;
+        pointer-events: none;
+        animation: cursorGlow infinite alternate;
+        box-shadow: 0 0 220px 220px rgba(119, 105, 212, 0.33); /* Resplandor muy grande */
+    }
+    /* Estilos para la lista sin puntos */
+    .menu {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    /* Estilo inicial para los elementos de la lista */
+    .menu li {
+        display: flex;
+        align-items: center;
+        padding: 5px 0;
+    }
+
+
+    /* Estilo para la línea a la izquierda */
+    .menu li::before {
+        content: "";
+        width: 20px; /* Ancho de la línea inicial */
+        height: 2px; /* Altura de la línea */
+        background-color: transparent; /* Color de la línea inicial */
+        margin-right: 10px; /* Espacio entre la línea y el texto */
+        transition: all 0.3s; /* Transición suave para cambios */
+    }
+
+    /* Estilo para el texto del enlace */
+    .menu li a {
+        text-decoration: none;
+        color: rgba(226, 232, 240, 0.575); /* Color de texto normal */
+        transition: all 0.3s; /* Transición suave para cambios */
+    }
+
+    /* Estilo al hacer hover sobre los elementos de la lista */
+    .menu li:hover::before {
+        width: 10%; /* Hacer la línea más larga al hacer hover */
+        background-color: rgb(226 232 240); /* Cambiar el color de la línea al hacer hover */
+    }
+
+    /* Estilo al hacer clic en los elementos de la lista */
+    .menu li:active::before {
+        width: 10%; /* Mantener la línea larga al hacer clic */
+        background-color: rgb(226 232 240); /* Mantener el color de la línea al hacer clic */
+    }
+
+    /* Estilo al hacer hover sobre los enlaces */
+    .menu li a:hover {
+        color: rgb(226 232 240); /* Cambiar el color del texto al hacer hover */
+    }
+
+    .nombre{
+        font-size: 45px;
+        font-weight: 600;  
+        width: 500px;
+
+    }
+
+    .posicion{
+        font-size: 1.20rem;
+        line-height: 1.75rem;
+        font-weight: 320;
+
+    }
+
+
+    .about{
+        color:  rgba(226, 232, 240, 0.575);
+    }
+    .socials {
+        position: fixed;
+        bottom: 70px; /* Ajusta la distancia desde el pie de página */
+        left: 12%; /* Ajusta la distancia desde el margen derecho */
+        display: flex;
+        flex-direction: row;
+    }
+
+    .socials a {
+        text-decoration: none;
+        color: rgb(226 232 240);
+        margin-bottom: 10px; /* Espacio entre los íconos de redes sociales */
+        padding: 10px;
+        font-size: 24px;
+    }
+    /* ... (your existing CSS) ... */
+    /* Style for the "experience" section */
+    #experience {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align items horizontally */
+        gap: 20px; /* Space between each "card" */
+    }
+
+    .tarjeta {
+        display: flex;
+        flex-direction: row; /* Stack elements vertically */
+        justify-content: center; /* Center align items vertically within the card */
+        align-items: start; /* Center align items horizontally within the card */
+        width: 100%; /* Take up full width of the parent */
+        background-color: transparent; /* Background color for the card */
+        padding: 10px; /* Add some padding for spacing */
+        box-sizing: border-box; 
+        border-radius: 15px;
+    }
+
+    .tarjeta:hover{
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.6px);
+    -webkit-backdrop-filter: blur(2.6px);
+
+    }
+
+    .exp-text-container {
+        background-color: none;
+        width: 30%; /* Take up 30% of the card's width */
+    }
+
+    .card-content-container {
+        width: 70%; /* Take up 70% of the card's width */
+    }
+    .tech-stack {
+        font-size: 12px;
+        list-style-type: none; /* Elimina los puntos/bolitas al lado de los elementos <li> */
+        padding: 0; /* Elimina el espacio interno (padding) de la lista */
+        margin: 0; /* Elimina el espacio externo (margin) de la lista */
+    }
+    .tech {
+        padding: 5px; /* Agrega un pequeño espacio interno */
+        border-radius: 3px; /* Agrega un pequeño borde redondeado */
+        background-color: rgb(0, 110, 255); /* Agrega un fondo con transparencia */
+        margin: 5px 0; /* Agrega un pequeño espacio externo arriba y abajo */
+        display: inline-block; /* Para que los elementos <li> se muestren en línea */
+        margin-right: 5px; /* Espacio entre los elementos <li> */
+    }
+    /* Media Query para pantallas pequeñas (teléfonos móviles) */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        left: 0;
+    }
+    
+
+    .subtitulo{
+        width: 90%;
+        color: rgba(226, 232, 240, 0.575);
+    }
+
+
+    .content {
+       width: 100%;
+       margin-left: 0;;/* Establece la misma altura que la barra lateral */
+    }
+
+    .nombre{
+        font-size: 45px;
+        font-weight: 600;  
+        width: 100%;
+
+    }
+
+    .socials{
+        position: relative;
+        padding-top: 20px;
+    }
+
+    .socials a {
+    text-decoration: none;
+    color: rgb(226 232 240);
+    margin-top: 50px;
+    margin-left: 0px;
+    padding: 17px;
+    font-size: 24px;
+    /* Agrega estilos específicos para teléfonos móviles aquí */
+}
+}
+
+    </style>
+
+    <script>
+        
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+                window.scrollTo({
+                    top: targetSection.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
     });
-});
 
-    document.addEventListener('mousemove', (e) => {
-    const cursor = document.querySelector('.cursor');
-    cursor.style.left = e.pageX + 'px';
-    cursor.style.top = e.pageY + 'px';
-});
+        document.addEventListener('mousemove', (e) => {
+        const cursor = document.querySelector('.cursor');
+        cursor.style.left = e.pageX + 'px';
+        cursor.style.top = e.pageY + 'px';
+    });
 
- </script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.2/socket.io.js"></script>
- <script>
-     var socket = io.connect('http://' + document.domain + ':' + location.port);
- 
-     socket.on('reload', function(data) {
-         if (data.reload) {
-             window.location.reload();
-         }
-     });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.2/socket.io.js"></script>
+    <script>
+        var socket = io.connect('http://' + document.domain + ':' + location.port);
+    
+        socket.on('reload', function(data) {
+            if (data.reload) {
+                window.location.reload();
+            }
+        });
 
-     
- </script>
- <script>
-    function scrollToAbout() {
-        const aboutSection = document.getElementById("about");
-        aboutSection.scrollIntoView({ behavior: "smooth" });
-    }
+        
+    </script>
+    <script>
+        function scrollToAbout() {
+            const aboutSection = document.getElementById("about");
+            aboutSection.scrollIntoView({ behavior: "smooth" });
+        }
 
-    function scrollToExp() {
-        const expSection = document.getElementById("experience");
-        expSection.scrollIntoView({ behavior: "smooth" });
-    }
+        function scrollToExp() {
+            const expSection = document.getElementById("experience");
+            expSection.scrollIntoView({ behavior: "smooth" });
+        }
 
-    function scrollToProj() {
-        const projSection = document.getElementById("projects");
-        projSection.scrollIntoView({ behavior: "smooth" });
-    }
+        function scrollToProj() {
+            const projSection = document.getElementById("projects");
+            projSection.scrollIntoView({ behavior: "smooth" });
+        }
 
 
-  
-</script>
+    
+    </script>
 
- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
